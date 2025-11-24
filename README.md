@@ -27,3 +27,14 @@ qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -kernel kernel8.img
 ```
 
 The program performs no visible output, but you can use this as a starting point for further development.
+
+## Running the development API server
+
+This repository also contains a minimal FastAPI application for experimentation. Install the Python dependencies and start the server with:
+
+```sh
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+The API responds on http://127.0.0.1:8000/ with a simple JSON status payload.
