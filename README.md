@@ -26,4 +26,4 @@ The kernel can be run with QEMU using:
 qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -kernel kernel8.img
 ```
 
-The program performs no visible output, but you can use this as a starting point for further development.
+The kernel writes a short boot message to the PL011 UART, which appears on the `qemu-system-aarch64` console. After printing, it idles in a low-power wait loop.
