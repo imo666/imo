@@ -27,3 +27,16 @@ qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -kernel kernel8.img
 ```
 
 The program performs no visible output, but you can use this as a starting point for further development.
+
+## Running the FastAPI app
+
+A small FastAPI application is included for convenience. Install dependencies and run it with Uvicorn:
+
+```sh
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+Visit http://localhost:8000/ to see a greeting or http://localhost:8000/health for a basic health check.
