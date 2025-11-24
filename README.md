@@ -26,4 +26,4 @@ The kernel can be run with QEMU using:
 qemu-system-aarch64 -M virt -cpu cortex-a53 -nographic -kernel kernel8.img
 ```
 
-The program performs no visible output, but you can use this as a starting point for further development.
+On boot, the kernel now writes `Hello from the StoryViz kernel!` to the PL011 UART (displayed in the QEMU console) and then enters a low-power wait loop.
