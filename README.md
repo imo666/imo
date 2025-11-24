@@ -2,6 +2,8 @@
 
 This repository contains a very small example of a bare-metal AArch64 (ARM64) kernel. The code boots on the QEMU `virt` machine and immediately enters an infinite low-power wait loop.
 
+For an unrelated example specification used for audiovisual project manifests and scene breakdowns (Sophia v3), see `docs/sophia_v3_spec.md`.
+
 ## Building
 
 A cross compiler for AArch64 is required. On Ubuntu it can be installed with:
